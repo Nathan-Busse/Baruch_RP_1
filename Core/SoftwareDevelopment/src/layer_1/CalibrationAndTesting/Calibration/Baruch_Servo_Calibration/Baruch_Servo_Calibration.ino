@@ -35,22 +35,22 @@ struct ServoMapping {
 
 ServoMapping servoMap[] = {
   // ===== Board 1 (0x40) =====
-  {"RF_coxa",  &pwm1, 0},
-  {"RF_femur", &pwm1, 1},
-  {"RF_tibia", &pwm1, 2},
+  {"RF_coxa",  &pwm1, 8},
+  {"RF_femur", &pwm1, 7},
+  {"RF_tibia", &pwm1, 6},
 
-  {"LR_coxa",  &pwm1, 13},
-  {"LR_femur", &pwm1, 14},
-  {"LR_tibia", &pwm1, 15},
+  {"LR_coxa",  &pwm1, 9},
+  {"LR_femur", &pwm1, 10},
+  {"LR_tibia", &pwm1, 11},
 
   // ===== Board 2 (0x41) =====
-  {"LF_coxa",  &pwm2, 13},
-  {"LF_femur", &pwm2, 14},
-  {"LF_tibia", &pwm2, 15},
+  {"LF_coxa",  &pwm2, 9},
+  {"LF_femur", &pwm2, 10},
+  {"LF_tibia", &pwm2, 11},
 
-  {"RR_coxa",  &pwm2, 0},
-  {"RR_femur", &pwm2, 1},
-  {"RR_tibia", &pwm2, 2}
+  {"RR_coxa",  &pwm2, 8},
+  {"RR_femur", &pwm2, 7},
+  {"RR_tibia", &pwm2, 6}
 };
 
 const uint8_t numServos = sizeof(servoMap) / sizeof(servoMap[0]);
